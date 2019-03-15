@@ -105,7 +105,7 @@
 
         <include
             android:id="@+id/cart_view"
-            layout="@layout/fragment_3days"
+            layout="@layout/fragment_next_day"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -125,6 +125,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.0998632" />
+        app:layout_constraintGuide_percent="0.091" />
 
 </android.support.constraint.ConstraintLayout>
