@@ -14,8 +14,7 @@ public class HomeFragment extends Fragment {
     }
 
     public static HomeFragment getInstance() {
-        HomeFragment fragment = new HomeFragment();
-        return fragment;
+        return new HomeFragment();
     }
 
     @Override

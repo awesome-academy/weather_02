@@ -8,15 +8,14 @@ import android.view.ViewGroup;
 
 import com.example.weather.R;
 
-public class Weather3DaysFragment extends Fragment {
+public class NextDayWeatherFragment extends Fragment {
     private OnItemClickListener mListener;
 
-    public Weather3DaysFragment() {
+    public NextDayWeatherFragment() {
     }
 
-    public static Weather3DaysFragment newInstance() {
-        Weather3DaysFragment fragment = new Weather3DaysFragment();
-        return fragment;
+    public static NextDayWeatherFragment newInstance() {
+        return new NextDayWeatherFragment();
     }
 
     @Override
@@ -27,7 +26,7 @@ public class Weather3DaysFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        return inflater.inflate(R.layout.fragment_3days, container, false);
+        return inflater.inflate(R.layout.fragment_next_day, container, false);
     }
 
     public interface OnItemClickListener {

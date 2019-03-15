@@ -1,14 +1,13 @@
 <resources>
     <string name="app_name">Weather</string>
     <string name="exception_text">must implement OnItemClickListener</string>
-    <string name="df">This screen display current weather of today, short info about weather of tomorrow and the next tomorrow day, include: min/max temperature, weather state and link to forecast 5 days, list selected cities.This screen display current weather of today, short info about weather of tomorrow and the next tomorrow day, include: min/max temperature, weather state and link to forecast 5 days, list selected cities.This screen display current weather of today, short info about weather of tomorrow and the next tomorrow day, include: min/max temperature, weather state and link to forecast 5 days, list selected cities.This screen display current weather of today, short info about weather of tomorrow and the next tomorrow day, include: min/max temperature, weather state and link to forecast 5 days, list selected cities.This screen display current weather of today, short info about weather of tomorrow and the next tomorrow day, include: min/max temperature, weather state and link to forecast 5 days, list selected cities.This screen display current weather of today, short info about weather of tomorrow and the next tomorrow day, include: min/max temperature, weather state and link to forecast 5 days, list selected cities.This screen display current weather of today, short info about weather of tomorrow and the next tomorrow day, include: min/max temperature, weather state and link to forecast 5 days, list selected cities.This screen display current weather of today, short info about weather of tomorrow and the next tomorrow day, include: min/max temperature, weather state and link to forecast 5 days, list selected cities.This screen display current weather of today, short info about weather of tomorrow and the next tomorrow day, include: min/max temperature, weather state and link to forecast 5 days, list selected cities.This screen display current weather of today, short info about weather of tomorrow and the next tomorrow day, include: min/max temperature, weather state and link to forecast 5 days, list selected cities.This screen display current weather of today, short info about weather of tomorrow and the next tomorrow day, include: min/max temperature, weather state and link to forecast 5 days, list selected cities.This screen display current weather of today, short info about weather of tomorrow and the next tomorrow day, include: min/max temperature, weather state and link to forecast 5 days, list selected cities.This screen display current weather of today, short info about weather of tomorrow and the next tomorrow day, include: min/max temperature, weather state and link to forecast 5 days, list selected cities.This screen display current weather of today, short info about weather of tomorrow and the next tomorrow day, include: min/max temperature, weather state and link to forecast 5 days, list selected cities.</string>
     <string name="city_name_hanoi">Hanoi</string>
     <string name="text_degree">℃</string>
-    <string name="text_temprature">22 / 31℃</string>
+    <string name="test_text_temprature">22 / 31℃</string>
     <string name="_5_days_forecast">5 - days forecast</string>
-    <string name="wed_thunder_storm">Wed - Thunder storm</string>
-    <string name="tomorrow_rainy">Tomorrow - Rainy</string>
-    <string name="mon_rainy">Mon - Rainy</string>
-    <string name="text_30">30</string>
+    <string name="test_wed_thunder_storm">Wed - Thunder storm</string>
+    <string name="test_tomorrow_rainy">Tomorrow - Rainy</string>
+    <string name="test_mon_rainy">Mon - Rainy</string>
+    <string name="test_text_30">30</string>
     <string name="text_rainy">Rainy</string>
 </resources>
