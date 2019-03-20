@@ -1,4 +1,4 @@
-package com.example.weather.screen.home;
+package vn.sunasterisk.weather.screen.home;
 
 import android.Manifest;
 import android.arch.lifecycle.ViewModelProviders;
@@ -14,7 +14,7 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.example.weather.R;
+import vn.sunasterisk.weather.R;
 
 public class HomeActivity extends AppCompatActivity {
     public static String[] permissions = new String[]{
@@ -30,7 +30,7 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         mFragmentManager = getSupportFragmentManager();
         mHomeViewModel = ViewModelProviders.of(this).get(HomeViewModel.class);
-        checkPermission();
+        checkLocationPermission();
     }
 
     private void loadComponents() {
@@ -51,40 +51,37 @@ public class HomeActivity extends AppCompatActivity {
         }
     }
 
-    public void checkPermission() {
+    public void checkLocationPermission() {
         if (ActivityCompat.checkSelfPermission(HomeActivity.this, permissions[0])
                 != PackageManager.PERMISSION_GRANTED
                 && ActivityCompat.checkSelfPermission(HomeActivity.this, permissions[1]) !=
                 PackageManager.PERMISSION_GRANTED) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                request_permission();
+                requestPermission();
             }
-        } else {
-            loadComponents();
+            return;
         }
+        loadComponents();
     }
 
-    private void request_permission() {
-        if (ActivityCompat.shouldShowRequestPermissionRationale(HomeActivity.this,
-                permissions[0]) ||
-                ActivityCompat.shouldShowRequestPermissionRationale(HomeActivity.this,
-                        permissions[1])) {
-
-            Snackbar.make(findViewById(R.id.root_layout),
-                    getResources().getString(R.string.message),
-                    Snackbar.LENGTH_LONG)
-                    .setAction("retry", new View.OnClickListener() {
-                        @Override
-                        public void onClick(View view) {
-                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                                requestPermissions(permissions, 10);
-                            }
-                        }
-                    }).show();
-        } else {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-                requestPermissions(permissions, REQUEST_CODE);
-            }
+    private void requestPermission() {
+        if (ActivityCompat.shouldShowRequestPermissionRationale(
+                HomeActivity.this,
+                permissions[0]) || ActivityCompat.shouldShowRequestPermissionRationale(
+                HomeActivity.this, permissions[1])) {
+            Snackbar.make(findViewById(R.id.root_layout), getResources().getString(R.string.message),
+                    Snackbar.LENGTH_LONG).setAction("retry", new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+                        requestPermissions(permissions, 10);
+                    }
+                }
+            }).show();
+            return;
+        }
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            requestPermissions(permissions, REQUEST_CODE);
         }
     }
 

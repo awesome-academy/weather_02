@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/img_rainy_background"
-    tools:context=".screen.home.TodayFragment">
+    tools:context="vn.sunasterisk.weather.screen.home.TodayFragment">
 
     <TextView
         android:id="@+id/text_daily_city_name"

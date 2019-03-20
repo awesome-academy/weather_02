@@ -1,4 +1,4 @@
-package com.example.weather.screen.home;
+package vn.sunasterisk.weather.screen.home;
 
 import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.example.weather.R;
+import vn.sunasterisk.weather.R;
 
 public class HomeFragment extends Fragment {
     private HomeViewModel mHomeViewModel;

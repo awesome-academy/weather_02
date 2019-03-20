@@ -1,4 +1,4 @@
-package com.example.weather.screen.data.model;
+package vn.sunasterisk.weather.data.model;
 
 public class Coordinate {
     private String mLongitude;

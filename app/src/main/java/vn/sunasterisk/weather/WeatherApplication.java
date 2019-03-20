@@ -1,4 +1,4 @@
-package com.example.weather.screen;
+package vn.sunasterisk.weather;
 
 import android.app.Application;
 

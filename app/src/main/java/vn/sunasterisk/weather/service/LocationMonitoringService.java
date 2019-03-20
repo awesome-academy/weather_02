@@ -1,4 +1,4 @@
-package com.example.weather.screen.service;
+package vn.sunasterisk.weather.service;
 
 import android.Manifest;
 import android.app.Service;
@@ -21,14 +21,14 @@ import com.google.android.gms.location.LocationServices;
 public class LocationMonitoringService extends Service implements
         GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener,
         LocationListener {
+    public static final String ACTION_LOCATION_BROADCAST = "ACTION_LOCATION_BROADCAST";
+    public static final String EXTRA_LATITUDE = "com.example.weather.screen.service.EXTRA_LATITUDE";
+    public static final String EXTRA_LONGITUDE = "com.example.weather.screen.service.EXTRA_LONGITUDE";
     private static final int LOCATION_INTERVAL = 1000*30*60;
     private static final int FASTEST_LOCATION_INTERVAL = 5000;
-    GoogleApiClient mLocationClient;
-    LocationRequest mLocationRequest = new LocationRequest();
-    public static final String ACTION_LOCATION_BROADCAST =
-            LocationMonitoringService.class.getName() + "LocationBroadcast";
-    public static final String EXTRA_LATITUDE = "extra_latitude";
-    public static final String EXTRA_LONGITUDE = "extra_longitude";
+    private GoogleApiClient mLocationClient;
+    private LocationRequest mLocationRequest = new LocationRequest();
+
 
     public static Intent getIntent(Context context) {
         return new Intent(context, LocationMonitoringService.class);

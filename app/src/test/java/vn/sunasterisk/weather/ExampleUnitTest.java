@@ -1,4 +1,4 @@
-package com.example.weather;
+package vn.sunasterisk.weather;
 
 import org.junit.Test;
 

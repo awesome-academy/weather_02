@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="@color/color_gray"
-    tools:context=".screen.home.NextDayWeatherFragment">
+    tools:context="vn.sunasterisk.weather.screen.home.NextDayWeatherFragment">
     <TextView
         android:id="@+id/text_line2"
         android:layout_width="0dp"

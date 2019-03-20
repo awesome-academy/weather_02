@@ -1,11 +1,11 @@
-package com.example.weather.screen.home;
+package vn.sunasterisk.weather.screen.home;
 
 import android.app.Application;
 import android.arch.lifecycle.AndroidViewModel;
 import android.arch.lifecycle.MutableLiveData;
 import android.support.annotation.NonNull;
 
-import com.example.weather.screen.data.model.Coordinate;
+import vn.sunasterisk.weather.data.model.Coordinate;
 
 public class HomeViewModel extends AndroidViewModel {
     private MutableLiveData<Coordinate> mCoordinate = new MutableLiveData<>();

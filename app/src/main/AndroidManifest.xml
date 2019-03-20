@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.weather">
+    package="vn.sunasterisk.weather">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="ACCESS_COARSE_LOCATION" />
 
     <application
-        android:name=".screen.WeatherApplication"
+        android:name="vn.sunasterisk.weather.WeatherApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -15,18 +15,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".screen.home.HomeActivity"
+            android:name="vn.sunasterisk.weather.screen.home.HomeActivity"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <service
-            android:name=".screen.service.LocationMonitoringService"
-            android:exported="false" />
+        <service android:name="vn.sunasterisk.weather.service.LocationMonitoringService" />
     </application>
 
 </manifest>
