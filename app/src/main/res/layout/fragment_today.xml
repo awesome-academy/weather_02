@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/img_rainy_background"
-    tools:context=".screen.home.TodayFragment">
+    tools:context="vn.sunasterisk.weather.screen.home.TodayFragment">
 
     <TextView
         android:id="@+id/text_daily_city_name"
@@ -55,7 +55,7 @@
         android:layout_marginLeft="@dimen/margin_24dp"
         android:layout_marginTop="@dimen/margin_8dp"
         android:fontFamily="sans-serif-thin"
-        android:text="@string/text_30"
+        android:text="@string/test_text_30"
         android:textColor="@color/color_white"
         android:textSize="@dimen/text_size_80sp"
         app:layout_constraintBottom_toTopOf="@+id/text_daily_wstatus"

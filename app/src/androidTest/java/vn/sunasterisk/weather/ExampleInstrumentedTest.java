@@ -1,4 +1,4 @@
-package com.example.weather;
+package vn.sunasterisk.weather;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

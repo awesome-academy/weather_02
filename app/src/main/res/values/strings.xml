@@ -10,4 +10,5 @@
     <string name="test_mon_rainy">Mon - Rainy</string>
     <string name="test_text_30">30</string>
     <string name="text_rainy">Rainy</string>
+    <string name="message">"Location permission is needed. Without your permission we cannot do anything ..."</string>
 </resources>
